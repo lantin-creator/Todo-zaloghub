@@ -1,0 +1,157 @@
+* { box-sizing: border-box; }
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ececec;
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 360px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.input,
+.search {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+}
+
+.input:focus,
+.search:focus {
+  border-color: #4a90e2;
+}
+
+.search {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.addBtn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.addBtn:hover { background: #111; }
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.deleteAll {
+  background: none;
+  border: none;
+  color: #e25c5c;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.deleteAll:disabled { color: #bbb; cursor: default; }
+
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.filterBtn {
+  flex: 1;
+  padding: 6px 0;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  color: #555;
+}
+
+.filterBtnActive {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.completed .taskTitle {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.removeBtn {
+  border: none;
+  background: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.removeBtn:hover { color: #e25c5c; }
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-size: 13px;
+  margin: 12px 0;
+}
