@@ -103,11 +103,11 @@ export default defineConfig([
 - Счетчик общего количества задач.
 
 ## Установка и запуск
-
-1. Клонируйте репозиторий:
    ```bash
-   git clone 
+   git clone https://github.com/lantin-creator/Todo-zaloghub.git
    cd todo-zaloghub
    npm install
    npm run dev
+
+## Время работы: 30 минут
 ```
